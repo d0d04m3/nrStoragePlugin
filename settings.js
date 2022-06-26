@@ -497,12 +497,12 @@ externalModules: {
    palette: {
       allowInstall: true,
       allowUpload: true,
-      allowList: "*",
+      allowList: [],
       denyList: []
    },
    modules: {
       allowInstall: true,
-      allowList: "*",
+      allowList: [],
       denyList: []
    }
 }
