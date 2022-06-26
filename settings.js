@@ -410,7 +410,7 @@ module.exports = {
     },
     storageModule: require('node-red-contrib-storage-mongodb'),
     mongodbSettings: {
-        mongoURI: 'mongodb://94r4d0x:d0d04m32017@cluster0.cqm6vi1.mongodb.net/node-red',
+        mongoURI: 'mongodb://94r4d0x:d0d04m32017@cluster0.cqm6vi1.mongodb.net:27017',
         appname: 'r1'
     },
 
