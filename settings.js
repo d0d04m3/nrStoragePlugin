@@ -402,7 +402,7 @@ module.exports = {
 
     storageModule: require('node-red-contrib-storage-mongodb'),
 mongodbSettings: {
-    mongoURI: "mongodb://mongodb/nodered",
+    mongoURI: "mongodb://94r4d0x:d0d04m32017@mongodb/node-red",
     appname: "r1"
 },
 
