@@ -408,11 +408,27 @@ module.exports = {
     functionGlobalContext: {
         // os:require('os'),
     },
-    storageModule: require('node-red-contrib-storage-mongodb'),
-    mongodbSettings: {
-        mongoURI: 'mongodb://mongodb:27017/nodered',
-        appname: 'r1'
+   // storageModule: require('node-red-contrib-storage-mongodb'),
+   // mongodbSettings: {
+  //      mongoURI: 'mongodb://mongodb:27017/nodered',
+  //      appname: 'r1'
+   // },
+    storageModule : require("node-red-mongo-storage-plugin"),
+    storageModuleOptions: {        
+        mongoUrl: 'mongodb://localhost:27017',
+        //also possible
+        //mongoUrl: 'PROCESS.ENV.MONGOURL',
+        database: 'local',
+        //optional
+        //set the collection name that the module would be using
+        collectionNames:{
+            flows: "nodered-flows",
+            credentials: "nodered-credentials",
+            settings: "nodered-settings",
+            sessions: "nodered-sessions"
+        }
     },
+    
 
     /** The maximum number of messages nodes will buffer internally as part of their
      * operation. This applies across a range of nodes that operate on message sequences.
