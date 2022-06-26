@@ -373,7 +373,7 @@ module.exports = {
  * Node Settings
  *  - fileWorkingDirectory
  *  - functionGlobalContext
- *  - functionExternalModules
+ *  - function
  *  - nodeMessageBufferMaxLength
  *  - ui (for use with Node-RED Dashboard)
  *  - debugUseColors
@@ -397,6 +397,9 @@ module.exports = {
 
     /** Allow the Function node to load additional npm modules directly */
     functionExternalModules: true,
+    autoInstallModules: true,
+   
+}
     storageModule: require('node-red-contrib-storage-mongodb'),
 mongodbSettings: {
     mongoURI: "mongodb://mongodb/nodered",
