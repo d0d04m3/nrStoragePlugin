@@ -287,7 +287,6 @@ module.exports = {
       * will install/load. It can use '*' as a wildcard that matches anything.
       */
      externalModules: {
-          allowInstall: true,
           autoInstall: true,   /** Whether the runtime will attempt to automatically install missing modules */
           autoInstallRetry: 30, /** Interval, in seconds, between reinstall attempts */
           palette: {              /** Configuration for the Palette Manager */
