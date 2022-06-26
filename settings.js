@@ -491,5 +491,14 @@ mongodbSettings: {
     //    *   - reason: if result is false, the HTTP reason string to return
     //    */
     //},
-    autoInstallModules: true
+    externalModules: {
+    autoInstall: true,
+    autoInstallRetry: 30,
+    palette: {
+        allowInstall: true,
+        allowUpload: true,
+        allowList: [],
+        denyList: []
+    }
+}
 }
