@@ -397,6 +397,11 @@ module.exports = {
 
     /** Allow the Function node to load additional npm modules directly */
     functionExternalModules: true,
+    storageModule: require('node-red-contrib-storage-mongodb'),
+mongodbSettings: {
+    mongoURI: "mongodb://mongodb/nodered",
+    appname: "r1"
+},
 
     /** The following property can be used to set predefined values in Global Context.
      * This allows extra node modules to be made available with in Function node.
@@ -408,13 +413,6 @@ module.exports = {
     functionGlobalContext: {
         // os:require('os'),
     },
-    storageModule: require('node-red-contrib-storage-mongodb/nrs'),
-    mongodbSettings: {
-        mongoURI: 'mongodb://mongodb:27017',
-        appname: 'r1'
-    },
-
-    
 
     /** The maximum number of messages nodes will buffer internally as part of their
      * operation. This applies across a range of nodes that operate on message sequences.
