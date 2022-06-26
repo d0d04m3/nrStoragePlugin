@@ -1,6 +1,7 @@
 FROM nodered/node-red:latest
 
 COPY settings.js /data/
+COPY package.json /data/
 USER root
 RUN chown -R node-red:root /data
 USER node-red
