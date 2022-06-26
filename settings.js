@@ -397,9 +397,9 @@ module.exports = {
 
     /** Allow the Function node to load additional npm modules directly */
     functionExternalModules: true,
-    autoInstallModules: true,
+    
    
-}
+
     storageModule: require('node-red-contrib-storage-mongodb'),
 mongodbSettings: {
     mongoURI: "mongodb://mongodb/nodered",
@@ -491,4 +491,5 @@ mongodbSettings: {
     //    *   - reason: if result is false, the HTTP reason string to return
     //    */
     //},
+    autoInstallModules: true
 }
