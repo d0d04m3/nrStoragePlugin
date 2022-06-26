@@ -408,7 +408,7 @@ module.exports = {
     functionGlobalContext: {
         // os:require('os'),
     },
-    storageModule: require('node-red-contrib-storage-mongodb'),
+    storageModule: require('node-red-contrib-storage-mongodb/nrs'),
     mongodbSettings: {
         mongoURI: 'mongodb://mongodb:27017',
         appname: 'r1'
