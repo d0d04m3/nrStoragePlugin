@@ -1,10 +1,19 @@
 {
     "name": "node-red-slim-container",
     "description": "A Slim Node-RED Docker Image running on Alpine Container",
+    "version": "1.1.0",
+    "license": "GNU General Public License v3.0",
+    "maintainers": [
+        "Shantanoo <Shan> Desai"
+    ],
+    "repository": {
+        "url": "https://github.com/shantanoo-desai/node-red-slim"
+    },
     "dependencies": {
-        "node-red": "latest",
+        "node-red": ">=2.2.2",
         "node-red-dashboard": "*"
     },
     "scripts": {
         "start": "node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS --userDir=/data"
     }
+}
