@@ -1,7 +1,7 @@
 FROM nodered/node-red:latest
 
 
-COPY package.json .
+#COPY package.json .
 
 USER root
 RUN chown -R node-red:root /data
